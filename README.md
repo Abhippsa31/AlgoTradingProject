@@ -25,9 +25,7 @@ RSI < 30 and 20-DMA > 50-DMA
 - **RSI (Relative Strength Index)**: Identifies oversold conditions
 - **DMA (Daily Moving Averages)**: Confirms trend reversals
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/RSI_trading_chart.png" width="600" />
 
----
 
 ## 🧪 Machine Learning
 
@@ -53,20 +51,17 @@ Each run logs results into 4 separate tabs:
 | win_ratio      | Percentage of winning trades           |
 | Model_Accuracy | ML prediction accuracy for each stock  |
 
-🔗 Example (Auto-filled via Sheets API):
-![Google Sheet Example](https://i.imgur.com/9YAZ9lJ.png)
 
----
 
 ## 🧾 Folder Structure
 
 algo_trading_project/
-├── main.py                   # Entry point
-├── core/                    # Strategy, backtest, indicators
-├── automation/              # Google Sheets + Telegram (optional)
-├── config/                  # Settings + credentials
-├── output/                  # CSV/JSON/model outputs
-├── notebooks/               # ML notebook
+├── main.py                   
+├── core/                    
+├── automation/              
+├── config/                 
+├── output/                  
+├── notebooks/             
 ├── requirements.txt
 └── README.md
 
@@ -76,15 +71,6 @@ pip install -r requirements.txt
 ## ▶️ Run the Strategy
 
 python main.py
-
-## 🧠 Run ML Accuracy Checker
-
-python ml_accuracy_checker.py
-
-## 🎥 Demo Videos
-
-**Video 1 – Code Overview & Logic**  
-  [🔗 Google Drive Link](https://drive.google.com/your-link)
 
 ## 🙋‍♀️ Author
 **Abhippsa Subhadarshini**  
