@@ -1,31 +1,92 @@
-AlgoTradingProject
-Algo-Trading System with ML//Google Sheets Integration.
-This project is a Python-based mini algorithmic trading prototype that demonstrates a rule-based trading strategy enhanced with basic machine learning and automation. The system fetches live stock data using yfinance, generates trading signals using technical indicators like RSI and Moving Averages, backtests the strategy, and logs results into Google Sheets.
+# 📊 Algo-Trading System with ML & Google Sheets Integration
 
-Additionally, it uses a Decision Tree classifier to predict the next-day market movement based on indicators like RSI, MACD, and Volume, and reports the prediction accuracy per stock.
-Key Features
-Stock Data Ingestion – Downloads historical stock prices from Yahoo Finance for selected NIFTY 50 stocks.
-Strategy Logic – Implements a simple RSI + DMA crossover strategy:
+A Python-based algorithmic trading prototype that combines **technical indicators** and **machine learning** to generate signals, simulate trades, and log performance metrics to **Google Sheets**.
 
-Buy signal: RSI < 30 and 20-DMA > 50-DMA
+---
 
-Backtesting – Simulates strategy performance over 6 months to compute PnL and win/loss count.
-ML Automation (Bonus) – Uses a Decision Tree to predict next-day price movement with accuracy reporting.
-Google Sheets Logging – Automatically logs:
-Trade history (Trade_Log tab)
-Summary PnL (Summary_PnL tab)
-Win ratio (win_ratio tab)
-ML model accuracy (Model_Accuracy tab)
+## 🚀 Features
 
-Console Output – Shows real-time progress, trade execution, and prediction accuracy.
+✅ Rule-based strategy: RSI + 20/50 DMA crossover  
+✅ ML-based prediction using Decision Tree  
+✅ Backtesting and PnL calculation  
+✅ Google Sheets automation for trade logs and model results  
+✅ Jupyter Notebook included for experiments
 
-Deliverables
+---
 
-Clean, modular Python code with reusable components (core/, automation/, config/)
-Output stored both locally and in connected Google Sheets
-ML experiment Jupyter Notebook included for model inspection
-Short demo videos explaining the code flow and output behavior
+## 🧠 Strategy Logic
 
-⚠️ Note: `credentials.json` is excluded for security reasons.  
-Please place your Google Sheets API key file inside `config/credentials.json`.
+### 💡 Buy Signal Criteria
+```
+RSI < 30 and 20-DMA > 50-DMA
+```
 
+### 📈 Technical Indicators
+- **RSI (Relative Strength Index)**: Identifies oversold conditions
+- **DMA (Daily Moving Averages)**: Confirms trend reversals
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/RSI_trading_chart.png" width="600" />
+
+---
+
+## 🧪 Machine Learning
+
+- Features used: `RSI`, `MACD`, `Volume`
+- Target: Next day price movement
+- Model: `DecisionTreeClassifier`
+- Evaluation: Time Series Cross-Validation
+
+📊 Sample Output:
+
+✅ ML Accuracy for TCS.NS: 52.34%
+✅ ML Accuracy for INFY.NS: 48.78%
+
+
+## 📋 Google Sheets Output
+
+Each run logs results into 4 separate tabs:
+
+| Tab Name        | Description                            |
+|----------------|----------------------------------------|
+| Trade_Log      | Detailed trades per stock              |
+| Summary_PnL    | PnL summary per stock                  |
+| win_ratio      | Percentage of winning trades           |
+| Model_Accuracy | ML prediction accuracy for each stock  |
+
+🔗 Example (Auto-filled via Sheets API):
+![Google Sheet Example](https://i.imgur.com/9YAZ9lJ.png)
+
+---
+
+## 🧾 Folder Structure
+
+algo_trading_project/
+├── main.py                   # Entry point
+├── core/                    # Strategy, backtest, indicators
+├── automation/              # Google Sheets + Telegram (optional)
+├── config/                  # Settings + credentials
+├── output/                  # CSV/JSON/model outputs
+├── notebooks/               # ML notebook
+├── requirements.txt
+└── README.md
+
+## 📦 Install Dependencies
+
+pip install -r requirements.txt
+## ▶️ Run the Strategy
+
+python main.py
+
+## 🧠 Run ML Accuracy Checker
+
+python ml_accuracy_checker.py
+
+## 🎥 Demo Videos
+
+**Video 1 – Code Overview & Logic**  
+  [🔗 Google Drive Link](https://drive.google.com/your-link)
+
+## 🙋‍♀️ Author
+**Abhippsa Subhadarshini**  
+💼 GitHub: [github.com/abhippsa](https://github.com/abhippsa)  
+📧 Email: rimun390@example.com
