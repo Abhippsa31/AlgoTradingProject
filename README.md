@@ -71,6 +71,12 @@ pip install -r requirements.txt
 ## ▶️ Run the Strategy
 
 python main.py
+## 🔗 Live Google Sheet (Demo Logs)
+
+View the auto-logged trades, summary PnL, and ML accuracy:
+
+📄 [AlgoTradeLog Sheet (View Only)]
+((https://docs.google.com/spreadsheets/d/1sCsjX5FE4PI3cBtnju0QebYXHZW80-GO1-PiGljjVzg/edit?usp=sharing))
 
 ## 🙋‍♀️ Author
 **Abhippsa Subhadarshini**  
