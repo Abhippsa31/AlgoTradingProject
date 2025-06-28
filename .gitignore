@@ -1,5 +1,29 @@
+# Python bytecode & cache
 __pycache__/
-*.pyc
-.env
-config/credentials.json
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.env/
+.venv/
+ENV/
+env/
+venv/
+
+# Output files, models, and logs
 output/
+*.pkl
+*.h5
+*.log
+*.json
+
+# Credentials (very important!)
+config/credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings (optional)
+.vscode/
+
