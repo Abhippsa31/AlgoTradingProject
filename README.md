@@ -1,5 +1,5 @@
 AlgoTradingProject
-Algo-Trading System with ML; Google Sheets Integration.
+Algo-Trading System with ML//Google Sheets Integration.
 This project is a Python-based mini algorithmic trading prototype that demonstrates a rule-based trading strategy enhanced with basic machine learning and automation. The system fetches live stock data using yfinance, generates trading signals using technical indicators like RSI and Moving Averages, backtests the strategy, and logs results into Google Sheets.
 
 Additionally, it uses a Decision Tree classifier to predict the next-day market movement based on indicators like RSI, MACD, and Volume, and reports the prediction accuracy per stock.
@@ -25,3 +25,7 @@ Clean, modular Python code with reusable components (core/, automation/, config/
 Output stored both locally and in connected Google Sheets
 ML experiment Jupyter Notebook included for model inspection
 Short demo videos explaining the code flow and output behavior
+
+⚠️ Note: `credentials.json` is excluded for security reasons.  
+Please place your Google Sheets API key file inside `config/credentials.json`.
+
