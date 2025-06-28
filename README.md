@@ -35,16 +35,16 @@ RSI < 30 and 20-DMA > 50-DMA
 - Evaluation: Time Series Cross-Validation
 
 📊 Sample Output:
-
-✅ ML Accuracy for TCS.NS: 52.34%
-✅ ML Accuracy for INFY.NS: 48.78%
+✅ ML Accuracy for TCS.NS: 66.07%
+✅ ML Accuracy for INFY.NS: 78.57%
+✅ ML Accuracy for RELIANCE.NS: 65.18%
 
 
 ## 📋 Google Sheets Output
 
 Each run logs results into 4 separate tabs:
 
-| Tab Name        | Description                            |
+| Tab Name       | Description                            |
 |----------------|----------------------------------------|
 | Trade_Log      | Detailed trades per stock              |
 | Summary_PnL    | PnL summary per stock                  |
